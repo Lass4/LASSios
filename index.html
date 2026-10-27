@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0d14">
+<meta name="description" content="LASSios — iOS jailbreak tweaks, themes, tools, and package updates for Sileo and Cydia.">
+<title>LASSios — iOS Package Repository</title>
+<style>
+:root{color-scheme:dark;--bg:#090c12;--panel:#0d121c;--panel2:#111a28;--line:#253246;--muted:#a9bad2;--text:#f5f7fc;--red:#ff304f;--red2:#d9143a;--blue:#7ca9ef;--radius:18px;--shadow:0 18px 60px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(ellipse at 80% 5%,#35101b55,transparent 34%),radial-gradient(ellipse at 10% 55%,#0b234055,transparent 35%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#090c12eF;backdrop-filter:blur(18px);border-bottom:1px solid #253246}.nav{min-height:68px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:850;letter-spacing:-.8px;white-space:nowrap}.flame{width:35px;height:35px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(145deg,#ff4e66,#b70d2c);box-shadow:0 6px 22px #ff304f44;font-size:22px}.brand span span{color:var(--red)}.navlinks{display:flex;align-items:center;gap:25px;margin:auto;font-size:14px;color:#d4deed}.navlinks a:hover,.navlinks a.active{color:#fff}.search{display:flex;align-items:center;gap:9px;max-width:245px;min-width:170px;padding:9px 12px;border:1px solid #30405a;border-radius:30px;background:#111a29;color:var(--muted)}.search input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-size:13px}.menu-btn{display:none;border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:white;padding:8px 11px}.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#080b11 0%,#090c12ee 45%,#160b13dd 100%)}.hero:after{content:"";position:absolute;right:8%;top:-60%;width:470px;height:470px;border:1px solid #ff304f44;border-radius:50%;box-shadow:0 0 100px #ff304f18,inset 0 0 70px #ff304f12;pointer-events:none}.hero-grid{min-height:380px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px;padding:48px 0;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ff8a9c;font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:1.6px}.dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red)}h1{font-size:clamp(42px,6vw,65px);line-height:1.02;letter-spacing:-2.8px;margin:17px 0}.gradient{background:linear-gradient(90deg,#ff4d69,#ff2448 65%,#ff8b7e);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:490px;font-size:18px;color:#c0cee2}.compat{display:flex;align-items:center;gap:9px;font-weight:650;font-size:14px;margin:18px 0 24px}.check{display:inline-grid;place-items:center;width:23px;height:23px;border-radius:50%;background:var(--red);font-size:13px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border:1px solid #34435b;border-radius:14px;background:#111a29;color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .18s,border-color .18s}.btn:hover{transform:translateY(-2px);border-color:#7184a1}.btn.primary{background:linear-gradient(135deg,#ff3654,#d9143a);border-color:transparent;box-shadow:0 10px 28px #ff304f28}.hero-art{position:relative;min-height:285px;display:flex;align-items:center;justify-content:center}.phone{width:178px;height:300px;border:2px solid #647082;border-radius:34px;background:linear-gradient(160deg,#101a29,#05070b);box-shadow:0 28px 70px #0009;transform:rotate(-10deg);padding:15px;position:relative}.phone.second{transform:rotate(10deg) translate(-20px,14px);background:linear-gradient(160deg,#201317,#07090d)}.island{width:65px;height:15px;background:#020306;border-radius:12px;margin:0 auto 38px}.app-icon{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;margin:0 auto 12px;background:linear-gradient(145deg,#12e2e5,#008eae);font-size:34px;box-shadow:0 10px 30px #00c8db35}.app-icon.brown{background:linear-gradient(145deg,#dba176,#7c432b)}.phone-label{text-align:center;font-size:13px;font-weight:750}.floating-logo{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:30px;border:1px solid #ff5069;background:linear-gradient(145deg,#20212a,#090a10);display:grid;place-items:center;font-size:65px;box-shadow:0 0 45px #ff304f55;z-index:2}.section{padding:26px 0}.features{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);background:#0c1119b8;padding:22px 0}.feature{padding:0 24px;border-right:1px solid #1e2939}.feature:last-child{border:0}.feature-icon{width:46px;height:46px;border:1px solid #3a4a62;border-radius:13px;background:linear-gradient(145deg,#1b2635,#0b1018);display:grid;place-items:center;font-size:22px;margin-bottom:10px}.feature h3{margin:0 0 5px;font-size:15px}.feature p{margin:0;color:var(--muted);font-size:13px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:17px}.section-head h2{margin:0;font-size:27px;letter-spacing:-.8px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:14px}.small-btn{padding:9px 13px;font-size:12px;border-radius:30px}.packages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.package{min-width:0;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#0e141e,#090d13);padding:18px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}.package:hover{transform:translateY(-3px);border-color:#566780}.pkg-icon{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;font-size:28px;margin-bottom:10px;color:white;box-shadow:inset 0 1px #ffffff35}.pink{background:linear-gradient(145deg,#ff5c7a,#d71940)}.purple{background:linear-gradient(145deg,#9875ff,#4c24d9)}.green{background:linear-gradient(145deg,#1dd89a,#008c65)}.orange{background:linear-gradient(145deg,#ffc34b,#f27820)}.package h3{font-size:15px;margin:0;overflow-wrap:anywhere}.version{color:var(--muted);font-size:12px;margin:2px 0 8px}.tag{align-self:flex-start;padding:3px 9px;border-radius:30px;background:#ff304f;color:white;font-size:11px;font-weight:750;margin-bottom:8px}.tag.themes{background:#783cf1}.tag.utilities{background:#00a978}.tag.apps{background:#e88b20}.package p{font-size:12.5px;color:#c0cee2;margin:0 0 14px;flex:1}.install{width:100%;padding:9px;border:1px solid #3c4d68;border-radius:10px;background:#142033;color:#eef4ff;cursor:pointer;font-size:12px;font-weight:700}.install:hover{background:#1d2b42}.notice{border:1px solid #5d492b;background:#241b10;color:#ffe0a0;padding:12px 15px;border-radius:12px;font-size:13px;margin:0 0 16px}.about{display:grid;grid-template-columns:auto 1fr 230px;align-items:center;gap:24px;padding:23px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(120deg,#0d121b,#090d14)}.about-logo{font-size:65px;color:var(--red)}.about h2{margin:0 0 5px;font-size:24px}.about p{margin:0;color:var(--muted);font-size:13px}.about-list{border-left:1px solid var(--line);padding-left:24px;display:grid;gap:8px;font-size:12px;color:#c7d6eb}.about-list span b{color:var(--red);font-size:17px;margin-right:9px}.instructions{display:grid;grid-template-columns:1fr 1fr;gap:18px}.instruction{border:1px solid var(--line);border-radius:15px;padding:18px;background:#0b1018}.instruction h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:16px}.mini-icon{width:35px;height:35px;border-radius:11px;background:#10cfd4;display:grid;place-items:center;font-size:19px}.mini-icon.cydia{background:#a96a42}.instruction ol{padding:0;margin:0 0 14px;list-style:none;counter-reset:step}.instruction li{counter-increment:step;font-size:12px;color:#c0cee2;margin:5px 0}.instruction li:before{content:counter(step);display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--red);color:white;font-size:10px;font-weight:800;margin-right:8px}.urlbox{display:flex;align-items:center;gap:8px;background:#111b2b;border:1px solid #3a4b65;border-radius:10px;padding:8px 10px}.urlbox code{font-size:11px;overflow-wrap:anywhere;flex:1;color:#d9e5fa}.copy{border:0;background:transparent;color:#cbd8eb;font-size:18px;cursor:pointer}.footer{border-top:1px solid var(--line);margin-top:20px;padding:24px 0;color:var(--muted);font-size:12px}.footrow{display:flex;align-items:center;justify-content:space-between;gap:16px}.footer .brand{font-size:18px}.footnote{text-align:right}.empty{display:none;padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#f3f7ff;color:#111827;border-radius:12px;padding:11px 16px;font-size:13px;font-weight:750;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.2s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.nav{gap:14px}.navlinks{gap:14px}.search{max-width:190px}.hero-grid{grid-template-columns:1fr .8fr}.phone{width:145px;height:260px}.packages{grid-template-columns:repeat(2,minmax(0,1fr))}.features{grid-template-columns:repeat(2,1fr);row-gap:20px}.feature:nth-child(2){border-right:0}.feature:nth-child(3),.feature:nth-child(4){padding-top:15px;border-top:1px solid #1e2939}.about{grid-template-columns:auto 1fr}.about-list{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);padding:14px 0 0;grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1160px)}.nav{min-height:60px;flex-wrap:wrap;padding:9px 0}.brand{font-size:22px}.menu-btn{display:block;margin-left:auto}.navlinks{display:none;order:4;width:100%;padding:8px 0 4px;flex-wrap:wrap;gap:18px}.navlinks.open{display:flex}.search{order:3;max-width:none;width:100%;display:none}.search.open{display:flex}.hero-grid{grid-template-columns:1fr;padding:35px 0 20px;gap:0}.hero-copy{position:relative;z-index:3}.hero-art{min-height:235px;margin-top:10px}.phone{width:132px;height:230px;border-radius:28px}.island{margin-bottom:24px}.app-icon{width:55px;height:55px;font-size:27px}.floating-logo{width:85px;height:85px;font-size:49px;border-radius:24px}.lead{font-size:16px}.section-head{align-items:flex-start}.section-head h2{font-size:23px}.section-head p{font-size:12px}.section-head .btn{white-space:nowrap}.features{padding:17px 0}.feature{padding:0 14px}.feature h3{font-size:14px}.feature p{font-size:12px}.packages{gap:10px}.package{padding:13px}.pkg-icon{width:49px;height:49px;font-size:24px}.package h3{font-size:13px}.package p{font-size:12px}.about{gap:12px;padding:17px}.about-logo{font-size:45px}.about h2{font-size:20px}.about p{font-size:12px}.about-list{grid-template-columns:1fr 1fr}.instructions{grid-template-columns:1fr}.footrow{align-items:flex-start;flex-wrap:wrap}.footnote{text-align:left;width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="LASSios home"><span class="flame">♨</span><span>LASS<span>ios</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="navlinks" id="navlinks">
+      <a class="active" href="#home">Home</a><a href="#packages">Packages</a><a href="#packages">Tweaks</a><a href="#packages">Themes</a><a href="#about">About</a>
+    </nav>
+    <label class="search" id="searchWrap" aria-label="Search packages">⌕ <input id="searchInput" type="search" placeholder="Search packages..." autocomplete="off"></label>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> Your iOS customization hub</div>
+      <h1>Welcome to<br><span class="gradient">LASSios</span></h1>
+      <p class="lead">Your home for iOS jailbreak tweaks, themes and customization.</p>
+      <div class="compat"><span class="check">✓</span> Compatible repository format for Sileo &amp; Cydia</div>
+      <div class="actions"><a class="btn primary" href="#packages">⇩ &nbsp; Browse Packages</a><a class="btn" href="#add-repo">▤ &nbsp; How to Add Repo</a></div>
+    </div>
+    <div class="hero-art" aria-label="Sileo and Cydia package manager illustration">
+      <div class="phone"><div class="island"></div><div class="app-icon">⬡</div><div class="phone-label">Sileo</div></div>
+      <div class="phone second"><div class="island"></div><div class="app-icon brown">▧</div><div class="phone-label">Cydia</div></div>
+      <div class="floating-logo">♨</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap features">
+    <div class="feature"><div class="feature-icon">♢</div><h3>Safety First</h3><p>Review package details and only install software you trust.</p></div>
+    <div class="feature"><div class="feature-icon">ϟ</div><h3>Clear Updates</h3><p>Package versions and release notes in one place.</p></div>
+    <div class="feature"><div class="feature-icon">▯</div><h3>iOS Focused</h3><p>Tools and customization for supported jailbreak setups.</p></div>
+    <div class="feature"><div class="feature-icon">∞</div><h3>Sileo &amp; Cydia</h3><p>One APT repository format for both package managers.</p></div>
+  </div>
+</section>
+
+<section class="section" id="packages">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Featured Packages</h2><p>Explore tweaks, themes and tools from LASSios.</p></div><button class="btn small-btn" id="showAll">View All Packages →</button></div>
+    <div class="notice">Demo content: these sample package cards are placeholders, not downloadable packages. Replace them with real packages before publishing.</div>
+    <div class="packages" id="packageGrid">
+      <article class="package" data-search="exampletweak tweak settings customize">
+        <div class="pkg-icon pink">⚙</div><h3>ExampleTweak</h3><div class="version">Version 1.0.0 · Demo</div><span class="tag">Tweaks</span><p>A sample tweak card. Add your real package description here.</p><button class="install" data-demo="ExampleTweak">Package details ↗</button>
+      </article>
+      <article class="package" data-search="exampletheme theme icon appearance">
+        <div class="pkg-icon purple">▧</div><h3>ExampleTheme</h3><div class="version">Version 1.0.0 · Demo</div><span class="tag themes">Themes</span><p>A sample theme card for your custom iOS appearance.</p><button class="install" data-demo="ExampleTheme">Package details ↗</button>
+      </article>
+      <article class="package" data-search="exampletool utility tools">
+        <div class="pkg-icon green">🔧</div><h3>ExampleTool</h3><div class="version">Version 1.0.0 · Demo</div><span class="tag utilities">Utilities</span><p>A sample utility listing. Describe what your tool does.</p><button class="install" data-demo="ExampleTool">Package details ↗</button>
+      </article>
+      <article class="package" data-search="exampleapp app application">
+        <div class="pkg-icon orange">◇</div><h3>ExampleApp</h3><div class="version">Version 1.0.0 · Demo</div><span class="tag apps">Apps</span><p>A sample app listing for your repository catalog.</p><button class="install" data-demo="ExampleApp">Package details ↗</button>
+      </article>
+    </div>
+    <div class="empty" id="emptyState">No packages match your search. Try another keyword.</div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-logo">♨</div>
+    <div><h2>About LASSios</h2><p>LASSios is a community-focused iOS package repository concept for tweaks, themes and tools. This starter website is designed for a clean mobile experience and can be hosted with GitHub Pages. The live package feed still needs to be generated and published.</p></div>
+    <div class="about-list"><span><b>◇</b> Quality-focused listings</span><span><b>ϟ</b> Organized packages</span><span><b>♧</b> Community minded</span><span><b>♥</b> Made for iOS fans</span></div>
+  </div>
+</section>
+
+<section class="section" id="add-repo">
+  <div class="wrap">
+    <div class="section-head"><div><h2>How to Add LASSios</h2><p>When your APT feed is live, add its URL to your package manager.</p></div></div>
+    <div class="notice">Replace <strong>YOUR-USERNAME</strong> with your GitHub username. The repository URL will not work as a package source until valid APT metadata and package indexes have been published.</div>
+    <div class="instructions">
+      <article class="instruction"><h3><span class="mini-icon">⬡</span> For Sileo</h3><ol><li>Open Sileo on your jailbroken iPhone.</li><li>Go to Sources and tap Add (+).</li><li>Enter your LASSios repository URL below.</li><li>Tap Add and refresh your sources.</li></ol><div class="urlbox"><code class="repoUrl">https://YOUR-USERNAME.github.io/LASSios/</code><button class="copy" data-copy aria-label="Copy Sileo repository URL">▢</button></div></article>
+      <article class="instruction"><h3><span class="mini-icon cydia">▧</span> For Cydia</h3><ol><li>Open Cydia on your jailbroken iPhone.</li><li>Go to Sources → Edit → Add.</li><li>Enter the same LASSios repository URL.</li><li>Tap Add Source and wait for refresh.</li></ol><div class="urlbox"><code class="repoUrl">https://YOUR-USERNAME.github.io/LASSios/</code><button class="copy" data-copy aria-label="Copy Cydia repository URL">▢</button></div></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap footrow"><div><a class="brand" href="#home"><span class="flame">♨</span><span>LASS<span>ios</span></span></a><div>© <span id="year"></span> LASSios. All rights reserved.</div></div><div class="footnote">More Freedom. More Possibilities.<br>Built for the iOS customization community.</div></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $ = (s, root=document) => root.querySelector(s);
+const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+$('#year').textContent = new Date().getFullYear();
+const toast = (message) => {
+  const el = $('#toast'); el.textContent = message; el.classList.add('show');
+  clearTimeout(window.__toastTimer); window.__toastTimer = setTimeout(() => el.classList.remove('show'), 2400);
+};
+$('#menuBtn').addEventListener('click', () => $('#navlinks').classList.toggle('open'));
+$$('#navlinks a').forEach(a => a.addEventListener('click', () => $('#navlinks').classList.remove('open')));
+$('#searchInput').addEventListener('input', event => {
+  const q = event.target.value.trim().toLowerCase(); let visible = 0;
+  $$('.package').forEach(card => {
+    const match = !q || (card.dataset.search + ' ' + card.innerText).toLowerCase().includes(q);
+    card.style.display = match ? '' : 'none'; if (match) visible++;
+  });
+  $('#emptyState').style.display = visible ? 'none' : 'block';
+});
+$('#showAll').addEventListener('click', () => {
+  $('#searchInput').value = ''; $('#searchInput').dispatchEvent(new Event('input'));
+  $('#packages').scrollIntoView({behavior:'smooth'}); toast('Showing all sample package cards');
+});
+$$('[data-demo]').forEach(btn => btn.addEventListener('click', () => toast(btn.dataset.demo + ' is a placeholder. Add a real package to enable installation.')));
+$$('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+  const value = btn.parentElement.querySelector('.repoUrl').textContent;
+  try { await navigator.clipboard.writeText(value); toast('URL template copied'); }
+  catch { toast(value); }
+}));
+</script>
+</body>
+</html>
